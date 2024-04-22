@@ -1,0 +1,14 @@
+A(n) ədədi massivinin(siyahının) müsbət elementlərinin hasilini hesablayan alqoritm tərtib etməli
+
+def musbethasilfunksiyasi(reqemler):
+    yekunhasil = 1
+    for reqem in reqemler:
+        if reqem > 0:
+            yekunhasil *= reqem
+    return yekunhasil
+
+
+menim_listim = [2, 3, -4, 5, -6, 7]
+
+result = musbethasilfunksiyasi(menim_listim)
+print("Siyahıdakı müsbət ədədlərin hasil:", result)
